@@ -1,86 +1,93 @@
 /* Reset and base styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #1e1e2f;
-    color: #f0f0f0;
-    line-height: 1.6;
-    padding: 20px;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #ffcc00;
-    text-shadow: 1px 1px 2px #000;
-  }
-  
-  .language-switcher {
-    margin-top: 15px;
-  }
-  
-  .language-switcher button {
-    background-color: #333;
-    color: #fff;
-    border: 2px solid #555;
-    border-radius: 8px;
-    padding: 8px 14px;
-    margin: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-  
-  .language-switcher button:hover {
-    background-color: #ffcc00;
-    color: #222;
-    border-color: #ffcc00;
-  }
-  
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #29293d;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #000;
-  }
-  
-  main h2, main h3, main h4 {
-    color: #ffcc00;
-    margin-top: 20px;
-  }
-  
-  main p, main li {
-    margin-bottom: 12px;
-  }
-  
-  footer {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 0.9rem;
-    color: #aaa;
-  }
-  
-  footer p {
-    margin-top: 10px;
-  }
-  
-  /* Dark/Light Mode toggle (optional for future)
-  .dark-mode {
-    background-color: #f0f0f0;
-    color: #222;
-  }
-  */
-  
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #f9f9fb;
+  color: #2e2e2e;
+  line-height: 1.8;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.language-switcher {
+  margin-top: 15px;
+}
+
+.language-switcher button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 14px;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.language-switcher button:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+main h2, main h3, main h4 {
+  color: #007bff;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+main p {
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+main ul, main ol {
+  margin: 16px 0 16px 30px;
+  padding-left: 0;
+}
+
+main li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  margin: 16px 0;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family
