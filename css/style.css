@@ -1,16 +1,44 @@
-/* Reset and base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  /* Light mode */
+  --bg-color: #f9f9fb; /* Soft light background */
+  --text-color: #2e2e2e; /* Dark text */
+  --heading-color: #1e3a8a; /* Deep blue resembling the game's logo */
+  --button-bg: #f0f0f0; /* Light grey buttons */
+  --button-color: #333; /* Dark button text */
+  --button-border: #ccc; /* Light grey borders */
+  --button-hover-bg: #1e3a8a; /* Blue on hover */
+  --button-hover-color: #fff; /* White text on hover */
+  --content-bg: #ffffff; /* White background for content */
+  --code-bg: #f4f4f4; /* Light grey for code blocks */
+  --footer-color: #777; /* Grey text for footer */
+  --link-color: #1e3a8a; /* Deep blue for links */
+  --link-hover-color: #ffcc00; /* Gold on link hover */
+}
+
+body.dark-mode {
+  /* Dark mode inspired by Ragnarok */
+  --bg-color: #2e2e50; /* Dark purple/blue tone background */
+  --text-color: #e0e0e0; /* Soft light grey text for readability */
+  --heading-color: #ffcc00; /* Gold color for headings */
+  --button-bg: #4b4b69; /* Muted dark grey for buttons */
+  --button-color: #fff; /* White text on buttons */
+  --button-border: #666; /* Darker button borders */
+  --button-hover-bg: #ffcc00; /* Gold on hover */
+  --button-hover-color: #222; /* Dark text on hover */
+  --content-bg: #3a3a5a; /* Darker background for content */
+  --code-bg: #333; /* Dark background for code */
+  --footer-color: #bbb; /* Light grey footer text */
+  --link-color: #ffcc00; /* Gold for links */
+  --link-hover-color: #fff; /* White on link hover */
 }
 
 body {
   font-family: 'Inter', 'Segoe UI', sans-serif;
-  background-color: #f9f9fb;
-  color: #2e2e2e;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   line-height: 1.8;
   padding: 20px;
+  transition: all 0.3s ease;
 }
 
 header {
@@ -21,42 +49,47 @@ header {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #333;
+  color: var(--heading-color);
 }
 
-.language-switcher {
+.language-switcher, .mode-toggle {
   margin-top: 15px;
 }
 
-.language-switcher button {
-  background-color: #f0f0f0;
-  color: #333;
-  border: 1px solid #ccc;
+.language-switcher button, .mode-toggle button {
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  border: 1px solid var(--button-border);
   border-radius: 6px;
   padding: 8px 14px;
   margin: 5px;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease; /* Smooth transition */
 }
 
-.language-switcher button:hover {
-  background-color: #007bff;
-  color: #fff;
-  border-color: #007bff;
+.language-switcher button:hover, .mode-toggle button:hover {
+  background-color: var(--button-hover-bg);
+  color: var(--button-hover-color);
+  border-color: var(--button-hover-bg);
+}
+
+.language-switcher button:focus, .mode-toggle button:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--heading-color);
 }
 
 main {
   max-width: 800px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: var(--content-bg);
   padding: 24px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 main h2, main h3, main h4 {
-  color: #007bff;
+  color: var(--heading-color);
   margin-top: 24px;
   margin-bottom: 8px;
 }
@@ -67,7 +100,7 @@ main p {
 }
 
 main ul, main ol {
-  margin: 16px 0 16px 30px;
+  margin: 16px 0 16px 40px;
   padding-left: 0;
 }
 
@@ -77,7 +110,7 @@ main li {
 }
 
 pre {
-  background-color: #f4f4f4;
+  background-color: var(--code-bg);
   padding: 12px;
   border-radius: 6px;
   overflow-x: auto;
@@ -87,7 +120,30 @@ pre {
 }
 
 code {
-  background-color: #f4f4f4;
+  background-color: var(--code-bg);
   padding: 2px 6px;
   border-radius: 4px;
-  font-family
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for links */
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: var(--footer-color);
+}
+
+footer p {
+  margin-top: 10px;
+}
