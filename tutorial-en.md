@@ -130,7 +130,7 @@ frameborder="0" allowfullscreen></iframe>
 
 <div style="background-color:rgba(0, 0, 0, 0.2); border-left: 4px solid #ffcc00; padding: 10px; margin-top: 10px; font-style: italic;">
   <b>Important:</b>  
-  Some users reported that removing `dbghelp.dll` from the `system32` folder fixed some issues with the game. Try it if you face problems!
+  Some people reported that they needed to delete the <b>dbghelp.dll</b> file from the <b>System32</b> folder located at <b>~/path/to/prefix/Prefixes/default/Ragnarok/pfx/drive_c/Windows/System32</b> for the game to run properly. It's worth a try if something isn't working!
 </div>
 
 ## 🚀 Running Ragnarok
