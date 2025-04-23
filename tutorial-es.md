@@ -10,29 +10,29 @@ Si deseas ejecutar **Ragnarok LATAM** en Linux, puedes hacerlo perfectamente con
 
 - **Heroic Games Launcher** instalado  
   <details>
-  <summary>Haz clic para ver cómo instalar</summary>
+    <summary>Haz clic para ver cómo instalar</summary>
 
-  Si aún no tienes Flatpak instalado:
+    Si aún no tienes Flatpak instalado:
 
-  ```bash
-  sudo apt install flatpak
-  ```
+    ```bash
+    sudo apt install flatpak
+    ```
 
-  Agrega el repositorio de Flathub:
+    Agrega el repositorio de Flathub:
 
-  ```bash
-  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-  ```
+    ```bash
+    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    ```
 
-  Instala Heroic:
+    Instala Heroic:
 
-  ```bash
-  flatpak install flathub com.heroicgameslauncher.hgl
-  ```
+    ```bash
+    flatpak install flathub com.heroicgameslauncher.hgl
+    ```
 
-  <div style="background-color:rgba(0, 0, 0, 0.2); border-left: 4px solid #ffcc00; padding: 10px; margin-top: 10px; font-style: italic;">
-  La versión Flatpak de Heroic Games Launcher es preferible, ya que garantiza actualizaciones rápidas, mayor control de permisos y un rendimiento superior en comparación con APT y Snap, que pueden tener versiones desactualizadas o sobrecarga de rendimiento. Además, al ser la versión "oficial" de la aplicación, es recomendada por los propios desarrolladores.
-  </div>
+    <div style="background-color:rgba(0, 0, 0, 0.2); border-left: 4px solid #ffcc00; padding: 10px; margin-top: 10px; font-style: italic;">
+    La versión Flatpak de Heroic Games Launcher es preferible, ya que garantiza actualizaciones rápidas, mayor control de permisos y un rendimiento superior en comparación con APT y Snap, que pueden tener versiones desactualizadas o sobrecarga de rendimiento. Además, al ser la versión "oficial" de la aplicación, es recomendada por los propios desarrolladores.
+    </div>
   </details>
 
 - **Proton GE** (Proton GloriousEggroll)
