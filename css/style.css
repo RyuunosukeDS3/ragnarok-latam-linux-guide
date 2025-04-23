@@ -1,35 +1,35 @@
 :root {
   /* Light mode */
-  --bg-color: #f9f9fb; /* Soft light background */
-  --text-color: #2e2e2e; /* Dark text */
-  --heading-color: #1e3a8a; /* Deep blue resembling the game's logo */
-  --button-bg: #f0f0f0; /* Light grey buttons */
-  --button-color: #333; /* Dark button text */
-  --button-border: #ccc; /* Light grey borders */
-  --button-hover-bg: #1e3a8a; /* Blue on hover */
-  --button-hover-color: #fff; /* White text on hover */
-  --content-bg: #ffffff; /* White background for content */
-  --code-bg: #f4f4f4; /* Light grey for code blocks */
-  --footer-color: #777; /* Grey text for footer */
-  --link-color: #1e3a8a; /* Deep blue for links */
-  --link-hover-color: #ffcc00; /* Gold on link hover */
+  --bg-color: #f9f9fb;
+  --text-color: #2e2e2e;
+  --heading-color: #1e3a8a;
+  --button-bg: #f0f0f0;
+  --button-color: #333;
+  --button-border: #ccc;
+  --button-hover-bg: #1e3a8a;
+  --button-hover-color: #fff;
+  --content-bg: #ffffff;
+  --code-bg: #f4f4f4;
+  --footer-color: #777;
+  --link-color: #1e3a8a;
+  --link-hover-color: #ffcc00;
 }
 
 body.dark-mode {
   /* Dark mode inspired by Ragnarok */
-  --bg-color: #2e2e50; /* Dark purple/blue tone background */
-  --text-color: #e0e0e0; /* Soft light grey text for readability */
-  --heading-color: #ffcc00; /* Gold color for headings */
-  --button-bg: #4b4b69; /* Muted dark grey for buttons */
-  --button-color: #fff; /* White text on buttons */
-  --button-border: #666; /* Darker button borders */
-  --button-hover-bg: #ffcc00; /* Gold on hover */
-  --button-hover-color: #222; /* Dark text on hover */
-  --content-bg: #3a3a5a; /* Darker background for content */
-  --code-bg: #333; /* Dark background for code */
-  --footer-color: #bbb; /* Light grey footer text */
-  --link-color: #ffcc00; /* Gold for links */
-  --link-hover-color: #fff; /* White on link hover */
+  --bg-color: #2e2e50;
+  --text-color: #e0e0e0;
+  --heading-color: #ffcc00;
+  --button-bg: #4b4b69;
+  --button-color: #fff;
+  --button-border: #666;
+  --button-hover-bg: #ffcc00;
+  --button-hover-color: #222;
+  --content-bg: #3a3a5a;
+  --code-bg: #333;
+  --footer-color: #bbb;
+  --link-color: #ffcc00;
+  --link-hover-color: #fff;
 }
 
 body {
@@ -39,6 +39,8 @@ body {
   line-height: 1.8;
   padding: 20px;
   transition: all 0.3s ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 header {
@@ -65,7 +67,7 @@ h1 {
   margin: 5px;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.3s ease; /* Smooth transition */
+  transition: all 0.3s ease;
 }
 
 .language-switcher button:hover, .mode-toggle button:hover {
@@ -86,6 +88,8 @@ main {
   padding: 24px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 main h2, main h3, main h4 {
@@ -94,9 +98,11 @@ main h2, main h3, main h4 {
   margin-bottom: 8px;
 }
 
-main p {
+main p, main li {
   margin-bottom: 16px;
   font-size: 1rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 main ul, main ol {
@@ -105,7 +111,6 @@ main ul, main ol {
 }
 
 main li {
-  margin-bottom: 8px;
   line-height: 1.6;
 }
 
@@ -117,6 +122,8 @@ pre {
   font-family: 'Fira Code', monospace;
   font-size: 0.95rem;
   margin: 16px 0;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 pre {
@@ -152,12 +159,13 @@ code {
   border-radius: 4px;
   font-family: 'Fira Code', monospace;
   font-size: 0.95rem;
+  word-break: break-word;
 }
 
 a {
   color: var(--link-color);
   text-decoration: none;
-  transition: color 0.3s ease; /* Smooth transition for links */
+  transition: color 0.3s ease;
 }
 
 a:hover {
