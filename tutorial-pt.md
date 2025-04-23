@@ -39,6 +39,11 @@ Se você quer rodar o **Ragnarok LATAM** no Linux, dá pra fazer funcionar perfe
 
 ## 📥 Instalando o Proton GE no Heroic
 
+Video mostrando o passo a passo (video feito pelo **@aleex5**):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/us_t-bfkXUo" 
+frameborder="0" allowfullscreen></iframe>
+
 1. Abra o **Heroic Games Launcher**  
 2. Vá em `Configurações` → `Wine Manager`
 
