@@ -119,6 +119,33 @@ pre {
   margin: 16px 0;
 }
 
+pre {
+  position: relative; /* Required for absolute positioning of the copy button */
+}
+
+.copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  border: 1px solid var(--button-border);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+  background-color: var(--button-hover-bg);
+  color: var(--button-hover-color);
+  border-color: var(--button-hover-bg);
+  opacity: 1;
+}
+
+
 code {
   background-color: var(--code-bg);
   padding: 2px 6px;
@@ -146,4 +173,43 @@ footer {
 
 footer p {
   margin-top: 10px;
+}
+
+/* Make all images responsive */
+#tutorial-content img {
+  max-width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Popup overlay */
+#img-popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup image */
+#img-popup-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 30px rgba(0,0,0,0.8);
+  border-radius: 12px;
+  cursor: zoom-out;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Smooth fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
 }
