@@ -138,6 +138,14 @@ frameborder="0" allowfullscreen></iframe>
 Agora é só abrir o jogo normalmente pelo Heroic.  
 Se tudo estiver configurado certo, o Ragnarok vai iniciar sem problemas!
 
-## 🙌 Agradecimentos
+---
+
+# 🙌 Agradecimentos
 
 Agradecimento especial ao **@aleex5**, que descobriu essa configuração e compartilhou com a galera — salvando a comunidade Linux que queria reviver esse clássico!
+
+---
+
+# 🤝 Contribuição
+
+Para contribuir basta mandar criar um PR no seguinte repositorio: https://github.com/RyuunosukeDS3/ragnarok-latam-linux-guide.
