@@ -41,12 +41,12 @@ Si deseas ejecutar **Ragnarok LATAM** en Linux, puedes hacerlo perfectamente con
 
 Video que muestra el paso a paso (video hecho por **@aleex5**):
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Ql7UkR5zafo" 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ql7UkR5zafo" 
 frameborder="0" allowfullscreen></iframe>
 
 En Steam (video hecho por **@aleex5**):
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Hy9xlsvKRco" 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hy9xlsvKRco" 
 frameborder="0" allowfullscreen></iframe>
 
 1. Abre **Heroic Games Launcher**  
@@ -156,7 +156,7 @@ frameborder="0" allowfullscreen></iframe>
 
 📹 Video de esta parte del tutorial (video hecho por **@aleex5**):
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=DQOE8qjO4y0" 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DQOE8qjO4y0" 
 frameborder="0" allowfullscreen></iframe>
 
 En el servidor Nidhogg existe un problema donde la ciudad de **Prontera** se vuelve inaccesible — podrías recibir el error `Desconectado del Servidor` al intentar entrar con un personaje ubicado allí. Para solucionar esto (y posiblemente otros problemas similares en otros mapas o servidores), ejecuta el siguiente comando mientras el juego está abierto:
