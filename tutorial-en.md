@@ -160,10 +160,10 @@ frameborder="0" allowfullscreen></iframe>
 On the Nidhogg server, there's an issue where the city **Prontera** becomes inaccessible — you may get the `Disconnected from Server` error when trying to load a character located there. To fix this (and possibly other similar map/server issues), run the following command while the game is running:
 
 ```bash
-sudo sysctl -w /etc/sysctl.conf
+sudo sysctl -w net.ipv4.tcp_timestamps=0
 ```
 
-If you prefer, you can make this change permanent by editing the `/etc/sysctl.conf` file and adding the line `/etc/sysctl.conf` at the end.
+If you prefer, you can make this change permanent by editing the `/etc/sysctl.conf` file and adding the line `net.ipv4.tcp_timestamps=0` at the end.
 
 <div style="background-color:rgba(0, 0, 0, 0.2); border-left: 4px solid #ffcc00; padding: 10px; margin-top: 10px; font-style: italic;">
   <b>⚠️ Heads-up:</b>  

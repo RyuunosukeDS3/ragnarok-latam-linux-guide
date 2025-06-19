@@ -162,10 +162,10 @@ frameborder="0" allowfullscreen></iframe>
 En el servidor Nidhogg existe un problema donde la ciudad de **Prontera** se vuelve inaccesible — podrías recibir el error `Desconectado del Servidor` al intentar entrar con un personaje ubicado allí. Para solucionar esto (y posiblemente otros problemas similares en otros mapas o servidores), ejecuta el siguiente comando mientras el juego está abierto:
 
 ```bash
-sudo sysctl -w /etc/sysctl.conf
+sudo sysctl -w net.ipv4.tcp_timestamps=0
 ```
 
-Si lo prefieres, puedes hacer que este cambio sea permanente editando el archivo `/etc/sysctl.conf` en tu sistema y añadiendo la línea `/etc/sysctl.conf` al final.
+Si lo prefieres, puedes hacer que este cambio sea permanente editando el archivo `/etc/sysctl.conf` en tu sistema y añadiendo la línea `net.ipv4.tcp_timestamps=0` al final.
 
 <div style="background-color:rgba(0, 0, 0, 0.2); border-left: 4px solid #ffcc00; padding: 10px; margin-top: 10px; font-style: italic;">
   <b>⚠️ Atención:</b>  
