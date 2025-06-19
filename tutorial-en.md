@@ -39,6 +39,11 @@ If you want to run **Ragnarok LATAM** on Linux, you can do so perfectly with **H
 
 ## 📥 Installing Proton GE in Heroic
 
+Video showing the step-by-step process (video made by **@aleex5**):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/us_t-bfkXUo" 
+frameborder="0" allowfullscreen></iframe>
+
 1. Open **Heroic Games Launcher**  
 2. Go to `Settings` → `Wine Manager`
 
@@ -125,7 +130,7 @@ If you want to run **Ragnarok LATAM** on Linux, you can do so perfectly with **H
 
 <div style="background-color:rgba(0, 0, 0, 0.2); border-left: 4px solid #ffcc00; padding: 10px; margin-top: 10px; font-style: italic;">
   <b>🚨 Important:</b>  
-  Some users reported that removing `dbghelp.dll` from the `system32` folder fixed some issues with the game. Try it if you face problems!
+  Some people reported that they needed to delete the <b>dbghelp.dll</b> file from the <b>System32</b> folder located at <b>~/path/to/prefix/Prefixes/default/Ragnarok/pfx/drive_c/Windows/System32</b> for the game to run properly. It's worth a try if something isn't working!
 </div>
 
 6. In Heroic, go again to the **game settings**
@@ -162,6 +167,8 @@ This workaround was discovered by **@trololobr** on Discord!
 Now you can launch the game normally from Heroic.  
 If everything is set up correctly, Ragnarok will open and run without issues!
 
-## 🙌 Credits
+---
+
+# 🙌 Credits
 
 Special thanks to **@aleex5**, who discovered and shared this setup with the community — helping all the Linux folks relive this classic!
