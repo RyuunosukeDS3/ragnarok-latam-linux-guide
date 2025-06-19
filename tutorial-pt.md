@@ -44,7 +44,7 @@ Se você quer rodar o **Ragnarok LATAM** no Linux, dá pra fazer funcionar perfe
 
    ![Wine Manager image](assets/images/wine-manager.png)
 
-3. Na aba **Proton-GE**, baixe a versão **GE-Proton9-27**  
+3. Na aba **Proton-GE**, baixe a versão **GE-Proton10-4**
    (Versões mais novas também podem funcionar)
 
    ![Proton GE image](assets/images/proton-ge.png)
@@ -55,7 +55,7 @@ Se você quer rodar o **Ragnarok LATAM** no Linux, dá pra fazer funcionar perfe
 
    ![ADD GAME image](assets/images/add-game.png)
 
-2. Preencha o campo **Game/App Name** com **Ragnarok**  
+2. Preencha o campo **Game/App Name** com **Ragnarok** (Ou algo como **Ragnarok - Latam**)
    (O Heroic deve carregar a imagem automaticamente — opcional)
 
    ![Game Name image](assets/images/game-name.png)
@@ -64,7 +64,7 @@ Se você quer rodar o **Ragnarok LATAM** no Linux, dá pra fazer funcionar perfe
 
    ![Show Wine Settings image](assets/images/show-wine-settings.png)
 
-4. Selecione **GE-Proton9-27** em **Wine Version**
+4. Selecione **GE-Proton10-4** em **Wine Version**
 
    ![Wine Version image](assets/images/wine-version.png)
 
@@ -81,7 +81,7 @@ Se você quer rodar o **Ragnarok LATAM** no Linux, dá pra fazer funcionar perfe
 
    ![Open Setup.exe image](assets/images/open-setup.png)
 
-8. Após a instalação, localize o executável do jogo:
+8. Após a instalação, localize os executável do jogo:
 
    ![Select Executable image](assets/images/select-executable.png)
 
@@ -113,6 +113,18 @@ Se você quer rodar o **Ragnarok LATAM** no Linux, dá pra fazer funcionar perfe
 
 5. Clique em **Aplicar** e depois em **OK**
 
+6. No Heroic, vá novamente até as **Configurações** do jogo
+
+   ![Game Settings image](assets/images/game-settings.png)
+
+7. Vá em **Other** e selecione **Use Steam Runtime**
+
+   ![Use Steam Runtime image](assets/images/use-steam-runtime.png)
+
+8. Depois, vá em **Advanced** e selecione **Disable UMU**
+
+   ![Disable Umu image](assets/images/disable-umu.png)
+
 ### 📝 Passos opcionais
 
 1. Instale as fontes do Windows clicando em **Winetricks**
@@ -124,9 +136,25 @@ Se você quer rodar o **Ragnarok LATAM** no Linux, dá pra fazer funcionar perfe
    ![Corefonts image](assets/images/corefonts.png)
 
 <div style="background-color:rgba(0, 0, 0, 0.2); border-left: 4px solid #ffcc00; padding: 10px; margin-top: 10px; font-style: italic;">
-  <b>Importante:</b>  
+  <b>🚨 Importante:</b>  
   Algumas pessoas relataram que precisaram deletar o arquivo `dbghelp.dll` da pasta `system32` para o jogo rodar corretamente. Vale a tentativa se algo não funcionar!
 </div>
+
+### 🔧 Workarounds
+
+No servidor Nidhogg acontece um problema onde a cidade **Prontera** fica inacessível por algum motivo, você recebe o erro `Desconectado do Servidor` ao tentar acessar um personagem que se encontra na cidade. Para resolver isso (e possívelmente resolver problemas parecidos em outros mapas/servidores) é necessário rodar o seguinte comando enquanto o jogo roda:
+
+```bash
+   sudo sysctl -w /etc/sysctl.conf
+```
+Se preferir, pode tornar isso algo persistente no sistema editando o arquivo `/etc/sysctl.conf` no seu sistema e adicionando a linha `/etc/sysctl.conf` no final do mesmo.
+
+<div style="background-color:rgba(0, 0, 0, 0.2); border-left: 4px solid #ffcc00; padding: 10px; margin-top: 10px; font-style: italic;">
+  <b>⚠️ Atenção:</b>  
+  Ainda é uma discussão importante e recente entre a comunidade, então o ideal por agora é acessar o discord caso tenha quaisquer duvidas sobre esse passo!
+</div>
+
+Esse workarund foi descoberto pelo usuário **@trololobr** no discord!
 
 ## 🚀 Rodando o Ragnarok
 

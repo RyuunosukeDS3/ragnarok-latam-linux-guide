@@ -124,9 +124,40 @@ Si deseas ejecutar **Ragnarok LATAM** en Linux, puedes hacerlo perfectamente con
    ![Corefonts image](assets/images/corefonts.png)
 
 <div style="background-color:rgba(0, 0, 0, 0.2); border-left: 4px solid #ffcc00; padding: 10px; margin-top: 10px; font-style: italic;">
-  <b>Importante:</b>  
+  <b>🚨 Importante:</b>  
   Algunas personas informaron que necesitaron eliminar el archivo `dbghelp.dll` de la carpeta `system32` para que el juego funcionara correctamente. ¡Vale la pena intentarlo si algo no funciona!
 </div>
+
+6. En Heroic, vuelve a las **Configuraciones** del juego
+
+   ![Game Settings image](assets/images/game-settings.png)
+
+7. Ve a **Other** y selecciona **Use Steam Runtime**
+
+   ![Use Steam Runtime image](assets/images/use-steam-runtime.png)
+
+8. Luego ve a **Advanced** y selecciona **Disable UMU**
+
+   ![Disable Umu image](assets/images/disable-umu.png)
+
+
+
+### 🔧 Soluciones Alternativas
+
+En el servidor Nidhogg existe un problema donde la ciudad de **Prontera** se vuelve inaccesible — podrías recibir el error `Desconectado del Servidor` al intentar entrar con un personaje ubicado allí. Para solucionar esto (y posiblemente otros problemas similares en otros mapas o servidores), ejecuta el siguiente comando mientras el juego está abierto:
+
+```bash
+   sudo sysctl -w /etc/sysctl.conf
+```
+
+Si lo prefieres, puedes hacer que este cambio sea permanente editando el archivo `/etc/sysctl.conf` en tu sistema y añadiendo la línea `/etc/sysctl.conf` al final.
+
+<div style="background-color:rgba(0, 0, 0, 0.2); border-left: 4px solid #ffcc00; padding: 10px; margin-top: 10px; font-style: italic;">
+  <b>⚠️ Atención:</b>  
+  Aún es un tema en discusión dentro de la comunidad, así que lo mejor por ahora es consultar el servidor de Discord si tienes dudas sobre este paso.
+</div>
+
+¡Este workaround fue descubierto por el usuario **@trololobr** en Discord!
 
 ## 🚀 Ejecutando Ragnarok
 

@@ -124,9 +124,38 @@ If you want to run **Ragnarok LATAM** on Linux, you can do so perfectly with **H
    ![Corefonts image](assets/images/corefonts.png)
 
 <div style="background-color:rgba(0, 0, 0, 0.2); border-left: 4px solid #ffcc00; padding: 10px; margin-top: 10px; font-style: italic;">
-  <b>Important:</b>  
+  <b>🚨 Important:</b>  
   Some users reported that removing `dbghelp.dll` from the `system32` folder fixed some issues with the game. Try it if you face problems!
 </div>
+
+6. In Heroic, go again to the **game settings**
+
+   ![Game Settings image](assets/images/game-settings.png)
+
+7. Go to **Other** and select **Use Steam Runtime**
+
+   ![Use Steam Runtime image](assets/images/use-steam-runtime.png)
+
+8. Then go to **Advanced** and select **Disable UMU**
+
+   ![Disable Umu image](assets/images/disable-umu.png)
+
+### 🔧 Workarounds
+
+On the Nidhogg server, there's an issue where the city **Prontera** becomes inaccessible — you may get the `Disconnected from Server` error when trying to load a character located there. To fix this (and possibly other similar map/server issues), run the following command while the game is running:
+
+```bash
+   sudo sysctl -w /etc/sysctl.conf
+```
+
+If you prefer, you can make this change permanent by editing the `/etc/sysctl.conf` file and adding the line `/etc/sysctl.conf` at the end.
+
+<div style="background-color:rgba(0, 0, 0, 0.2); border-left: 4px solid #ffcc00; padding: 10px; margin-top: 10px; font-style: italic;">
+  <b>⚠️ Heads-up:</b>  
+  This is still a topic of active discussion in the community, so the best thing for now is to check the Discord server if you have any questions about this step!
+</div>
+
+This workaround was discovered by **@trololobr** on Discord!
 
 ## 🚀 Running Ragnarok
 
