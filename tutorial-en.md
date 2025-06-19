@@ -41,7 +41,12 @@ If you want to run **Ragnarok LATAM** on Linux, you can do so perfectly with **H
 
 Video showing the step-by-step process (video made by **@aleex5**):
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/us_t-bfkXUo" 
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Ql7UkR5zafo" 
+frameborder="0" allowfullscreen></iframe>
+
+On Steam (video made by **@aleex5**):
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Hy9xlsvKRco" 
 frameborder="0" allowfullscreen></iframe>
 
 1. Open **Heroic Games Launcher**  
@@ -147,10 +152,15 @@ frameborder="0" allowfullscreen></iframe>
 
 ### 🔧 Workarounds
 
+📹 Video of this part of the tutorial (video made by **@aleex5**):
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=DQOE8qjO4y0" 
+frameborder="0" allowfullscreen></iframe>
+
 On the Nidhogg server, there's an issue where the city **Prontera** becomes inaccessible — you may get the `Disconnected from Server` error when trying to load a character located there. To fix this (and possibly other similar map/server issues), run the following command while the game is running:
 
 ```bash
-   sudo sysctl -w /etc/sysctl.conf
+sudo sysctl -w /etc/sysctl.conf
 ```
 
 If you prefer, you can make this change permanent by editing the `/etc/sysctl.conf` file and adding the line `/etc/sysctl.conf` at the end.
