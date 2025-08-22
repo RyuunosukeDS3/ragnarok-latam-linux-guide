@@ -179,6 +179,25 @@ Si lo prefieres, puedes hacer que este cambio sea permanente editando el archivo
 Ahora solo necesitas abrir el juego normalmente desde Heroic.  
 ¡Si todo está configurado correctamente, Ragnarok se iniciará sin problemas!
 
+## 🔦 Resolución de problemas
+Siempre es recomendable revisar el registro, ya que la mayoría de las veces allí aparecerá el mensaje de error (por ejemplo, “DLL no encontrada”), lo que te dará una pista clara para resolver el problema. Por esta razón, es importante activar los registros mientras el juego aún no funciona.
+
+1. Abre Configuración, ve a la pestaña Avanzado y activa **Enable verbose Logs**
+
+   ![Enable logs image](assets/images/enable-logs.png)
+
+2. Haz clic derecho sobre el juego, abre el menú y selecciona **Logs**
+
+   ![View logs image](assets/images/view-logs.png)
+
+3. El registro más reciente se mostrará en pantalla. También puedes abrir la carpeta de registros para verlo con cualquier editor de texto, o consultar el registro anterior si lo necesitas
+
+   ![View logs image](assets/images/view-logs-2.png)
+
+### **Fallo al intentar conectar con el servidor de parches**
+
+- Es muy probable que el prefijo creado por Proton haya sido configurado en **modo de 32 bits**, lo cual puede causar problemas en algunas distribuciones que no instalan las bibliotecas de **32 bits (lib32-*)** por defecto, como en el caso de Arch Linux. Para solucionar este error, verifica si la versión de **32 bits** de `gnutls` está instalada. En caso contrario, **será necesario instalar el paquete `lib32-gnutls`**. **GnuTLS** es utilizado por el cliente de Ragnarök para descargar los parches a través de HTTPS.
+
 ---
 
 # 🙌 Agradecimientos

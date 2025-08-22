@@ -177,6 +177,25 @@ This workaround was discovered by **@trololobr** on Discord!
 Now you can launch the game normally from Heroic.  
 If everything is set up correctly, Ragnarok will open and run without issues!
 
+## 🔦 Troubleshooting
+Checking the log is always recommended, since most of the time the error message (such as “DLL not found”) will appear there, giving you a clear direction to solve the problem. For this reason, it’s important to enable logs while the game is not yet working.
+
+1. Open Settings, go to the Advanced tab, and check **Enable verbose Logs**
+
+   ![Enable logs image](assets/images/enable-logs.png)
+
+2. Right-click the game, open the menu, and select **Logs**
+
+   ![View logs image](assets/images/view-logs.png)
+
+3. The most recent log will be displayed on screen. You can also open the log folder to view it with any text editor, or check the previous log if needed
+
+   ![View logs image](assets/images/view-logs-2.png)
+
+### **Failed to connect to the Patch server**
+
+- It is very likely that the prefix created by Proton was configured in **32-bit mode**, which can cause issues on some distributions that don’t install the **32-bit (lib32-*)** libraries by default, as is the case with Arch Linux. To fix this error, check if the **32-bit version** of `gnutls` is installed. If not, **you will need to install the `lib32-gnutls` package**. **GnuTLS** is used by the Ragnarök client to download patches via HTTPS.
+
 ---
 
 # 🙌 Credits
